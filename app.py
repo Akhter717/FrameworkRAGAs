@@ -11,6 +11,21 @@ work inside a Jupyter kernel:
   2. top-level await   -> asyncio.run(...)
 """
 
+import sys
+import types
+
+# --- Fix for ModuleNotFoundError -------------------------------------------
+# RAGAS's ragas/llms/base.py does `from langchain_community.chat_models.vertexai
+# import ChatVertexAI`. Newer langchain_community releases removed/moved that
+# submodule, so the import chain breaks before any of our own code runs.
+# We never use ChatVertexAI, so we inject a harmless stub module into
+# sys.modules BEFORE ragas (or anything that imports ragas) is imported.
+# This must stay at the very top of the file, above every other import.
+_stub = types.ModuleType("langchain_community.chat_models.vertexai")
+_stub.ChatVertexAI = object
+sys.modules["langchain_community.chat_models.vertexai"] = _stub
+# -----------------------------------------------------------------------------
+
 import asyncio
 import io
 import os
