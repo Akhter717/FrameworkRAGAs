@@ -1,0 +1,13 @@
+streamlit
+ragas
+langchain
+langchain-core
+langchain-text-splitters
+langchain-community
+langchain-classic
+langchain-groq
+pypdf
+faiss-cpu
+scikit-learn
+pandas
+openpyxl

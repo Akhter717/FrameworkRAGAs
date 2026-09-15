@@ -1,0 +1,44 @@
+[
+  {
+    "id": "policy1",
+    "question": "How many casual leaves do employees get per year?",
+    "ground_truth_answer": "Employees are entitled to 12 casual leaves per year.",
+    "ground_truth_context_ids": ["sample_documents/leave_and_wfh_policy.txt"],
+    "ground_truth_contexts": ["Employees are entitled to 12 casual leaves per year and 10 sick leaves per year."]
+  },
+  {
+    "id": "policy2",
+    "question": "How many days per week can employees work from home?",
+    "ground_truth_answer": "Employees may work from home up to 2 days per week with manager approval.",
+    "ground_truth_context_ids": ["sample_documents/leave_and_wfh_policy.txt"],
+    "ground_truth_contexts": ["Employees may work from home up to 2 days per week with prior approval from their reporting manager."]
+  },
+  {
+    "id": "policy3",
+    "question": "Within how many days must an expense claim be submitted?",
+    "ground_truth_answer": "Expense claims must be submitted within 30 days of the expense.",
+    "ground_truth_context_ids": ["sample_documents/expense_policy.pdf_p0"],
+    "ground_truth_contexts": ["All claims must be submitted within 30 days of the expense, along with valid receipts, through the expense management system."]
+  },
+  {
+    "id": "policy4",
+    "question": "Above what amount does an expense claim require manager approval?",
+    "ground_truth_answer": "Claims above 5000 rupees require manager approval.",
+    "ground_truth_context_ids": ["sample_documents/expense_policy.pdf_p0"],
+    "ground_truth_contexts": ["Claims above 5000 rupees require manager approval before submission."]
+  },
+  {
+    "id": "policy5",
+    "question": "When are new employees issued a laptop?",
+    "ground_truth_answer": "New employees are issued a laptop within their first week of joining.",
+    "ground_truth_context_ids": ["sample_documents/it_and_conduct_policy.pdf_p0"],
+    "ground_truth_contexts": ["New employees are issued a laptop and standard peripherals within their first week of joining."]
+  },
+  {
+    "id": "policy6",
+    "question": "What should an employee do if they experience harassment at work?",
+    "ground_truth_answer": "It should be reported to HR immediately.",
+    "ground_truth_context_ids": ["sample_documents/it_and_conduct_policy.pdf_p0"],
+    "ground_truth_contexts": ["Harassment, discrimination, or any form of misconduct will not be tolerated and should be reported to HR immediately."]
+  }
+]

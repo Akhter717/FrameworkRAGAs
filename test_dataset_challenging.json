@@ -1,0 +1,50 @@
+[
+  {
+    "id": "easy1",
+    "question": "How many casual leaves do employees get per year?",
+    "ground_truth_answer": "Employees are entitled to 12 casual leaves per year.",
+    "ground_truth_context_ids": ["sample_documents/leave_and_wfh_policy.txt"],
+    "ground_truth_contexts": ["Employees are entitled to 12 casual leaves per year and 10 sick leaves per year."]
+  },
+  {
+    "id": "not_in_docs1",
+    "question": "What is the notice period required before resigning from the company?",
+    "ground_truth_answer": "This information is not available in the provided documents.",
+    "ground_truth_context_ids": [],
+    "ground_truth_contexts": []
+  },
+  {
+    "id": "multi_hop1",
+    "question": "If an employee works from home and also wants to claim a client meal expense, what are the rules for both?",
+    "ground_truth_answer": "Employees may work from home up to 2 days per week with manager approval, and expense claims for client meals must be submitted within 30 days with valid receipts.",
+    "ground_truth_context_ids": [
+      "sample_documents/leave_and_wfh_policy.txt",
+      "sample_documents/expense_policy.pdf_p0"
+    ],
+    "ground_truth_contexts": [
+      "Employees may work from home up to 2 days per week with prior approval from their reporting manager.",
+      "All claims must be submitted within 30 days of the expense, along with valid receipts, through the expense management system."
+    ]
+  },
+  {
+    "id": "distractor1",
+    "question": "How many sick leaves can be carried forward to the next year?",
+    "ground_truth_answer": "Up to 5 unused sick leaves may be carried forward.",
+    "ground_truth_context_ids": ["sample_documents/leave_and_wfh_policy.txt"],
+    "ground_truth_contexts": ["Casual leaves cannot be carried forward to the next year, but up to 5 unused sick leaves may be carried forward."]
+  },
+  {
+    "id": "outside_scope1",
+    "question": "What is the capital of France?",
+    "ground_truth_answer": "This question is unrelated to the company policy documents, so the system should say it doesn't know.",
+    "ground_truth_context_ids": [],
+    "ground_truth_contexts": []
+  },
+  {
+    "id": "vague1",
+    "question": "Tell me about leave.",
+    "ground_truth_answer": "Employees get 12 casual leaves and 10 sick leaves per year, with leave requests submitted at least 3 days in advance.",
+    "ground_truth_context_ids": ["sample_documents/leave_and_wfh_policy.txt"],
+    "ground_truth_contexts": ["Employees are entitled to 12 casual leaves per year and 10 sick leaves per year. Leave requests must be submitted at least 3 days in advance through the HR portal, except in medical emergencies."]
+  }
+]
